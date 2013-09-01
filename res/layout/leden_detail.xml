@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" >
+
+<Button
+    android:id="@+id/btnPrev"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:onClick="showPrev"
+    android:text="@string/knopPrev"
+    android:visibility="invisible" />
+
+<Button
+    android:id="@+id/btnUp"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:onClick="showUp"
+    android:text="@string/knopUp" />
+
+<Button
+    android:id="@+id/btnNext"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:onClick="showNext"
+    android:text="@string/knopNext"
+    android:visibility="invisible" />
+    
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/btnUp"
+    android:layout_marginTop="15dp" >
+
+ <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:padding="5dp" > 
+ <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content" > 
+ <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/ledenTitel" />
+ <TextView android:id="@+id/txtTitel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+ </TableRow>
+ <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" > 
+ <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/ledenVoorletters" />
+ <TextView android:id="@+id/txtVoorletters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+ </TableRow>
+ <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" > 
+ <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/ledenVoornaam" />
+ <TextView android:id="@+id/txtVoornaam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+ </TableRow>
+ <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" > 
+ <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/ledenTussenvoegsel" />
+ <TextView android:id="@+id/txtTussenvoegsel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+ </TableRow>
+ <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/ledenAchternaam" />
+	<TextView android:id="@+id/txtAchternaam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="5dp" android:paddingTop="15dp" android:text="@string/ledenInstituut" android:textStyle="bold" />
+</TableRow>
+<TableRow android:id="@+id/tableRow7" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/instituutNaam" />
+	<TextView android:id="@+id/txtInstituutNaam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow8" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/instituutAdres" />
+	<TextView android:id="@+id/txtInstituutAdres" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow9" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/instituutAfdeling" />
+	<TextView android:id="@+id/txtInstituutAfdeling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow10" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/instituutPostcode" />
+	<TextView android:id="@+id/txtInstituutPostcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow11" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/instituutPlaats" />
+	<TextView android:id="@+id/txtInstituutPlaats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow12" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/ledenMail" />
+
+	<TextView
+	    android:id="@+id/txtMail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onClickMail"
+	    android:clickable="true"
+	    android:text="@string/defaultText" />
+
+</TableRow>
+<TableRow android:id="@+id/tableRow13" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:gravity="right" android:paddingRight="5dp" android:text="@string/ledenTel1" />
+
+	<TextView
+	    android:id="@+id/txtTel1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:clickable="true"
+	    android:gravity="center_vertical"
+	    android:text="@string/defaultText" />
+
+</TableRow>
+<TableRow android:id="@+id/tableRow14" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:gravity="right" android:paddingRight="5dp" android:text="@string/ledenTel2" />
+
+	<TextView
+	    android:id="@+id/txtTel2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:clickable="true"
+	    android:gravity="center_vertical"
+	    android:text="@string/defaultText" />
+
+</TableRow>
+<TableRow android:id="@+id/tableRow15" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:paddingTop="15dp" android:text="@string/ledenPrive" android:textStyle="bold" />
+</TableRow>
+<TableRow android:id="@+id/tableRow16" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/priveGeboorte" />
+<TextView android:id="@+id/txtGeboorte" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow17" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/priveAdres" />
+	<TextView android:id="@+id/txtPriveAdres" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow18" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/privePostcode" />
+	<TextView android:id="@+id/txtPrivePC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow19" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/privePlaats" />
+	<TextView android:id="@+id/txtPrivePlaats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultText" />
+</TableRow>
+<TableRow android:id="@+id/tableRow20" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/priveTelefoon" />
+
+	<TextView
+	    android:id="@+id/txtPriveTel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:clickable="true"
+	    android:text="@string/defaultText" />
+
+</TableRow>
+<TableRow android:id="@+id/tableRow21" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/priveMobiel" />
+
+	<TextView
+	    android:id="@+id/txtPriveMobiel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:clickable="true"
+	    android:text="@string/defaultText" />
+
+</TableRow>
+<TableRow android:id="@+id/tableRow22" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<TextView android:id="@+id/textView22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:paddingRight="5dp" android:text="@string/priveMail" />
+	<TextView android:id="@+id/txtPriveMail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onClickMail" android:clickable="true" android:text="@string/defaultText" />
+</TableRow>
+
+ </TableLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference android:title="Verversingsinterval"
+        android:summary="Hoe vaak moet de site gecheckt worden (herstart app noodzakelijk) ?"
+        android:key="prefRefreshRate"
+        android:entries="@array/ververs_text"
+        android:entryValues="@array/ververs_int"
+        android:defaultValue="24" />
+    <RingtonePreference
+        android:key="prefRingtone"
+        android:summary="Kies een ringtoon voor de reminder"
+        android:ringtoneType="notification" 
+        android:title="Ringtoon"
+		android:showSilent="false" android:showDefault="true"/>
+    <CheckBoxPreference android:title="Foto's ledenlijst" android:summary="Bij het zoeken in de ledenlijst een foto's tonen (op sommige systemen vertoont dit instabiel gedrag)" android:defaultValue="false" android:key="prefFotoLedenlijst" /><Preference android:title="NVKF-gegevens" android:summary="Voer deze in via Settings -&gt; Accounts &amp; Sync -&gt; Add account" />
+        	            
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvNaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/defaultTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+    <TextView
+        android:id="@+id/tvZiekenhuis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvNaam"
+        android:layout_marginLeft="25dp"
+        android:text="@string/defaultText"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvPlaats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvZiekenhuis"
+        android:layout_below="@id/tvZiekenhuis"
+        android:text="@string/defaultText"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    	<ImageView
+        android:id="@+id/imPasfoto"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/defaultText"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>
