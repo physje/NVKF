@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidstudioProjects\NVKF\app\libs\ormlite-core-4.27.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ab17697e9fb858d9e9048aec7fbbb76cfa6ce0b1">
+        <dex dex="D:\AndroidstudioProjects\NVKF\app\build\intermediates\pre-dexed\debug\ormlite-core-4.27-d61190b4872af57404c87b6693aaa158801ff84a.jar" />
+    </item>
+    <item
+        jar="D:\AndroidstudioProjects\NVKF\app\libs\ormlite-android-4.27.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3ae5c4001646bf506fae1d76609cf5966651be3d">
+        <dex dex="D:\AndroidstudioProjects\NVKF\app\build\intermediates\pre-dexed\debug\ormlite-android-4.27-313cd3b4ff758fa263173d7fa3d80c07928f97c5.jar" />
+    </item>
+
+</items>
